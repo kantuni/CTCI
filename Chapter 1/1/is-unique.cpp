@@ -3,7 +3,7 @@ using namespace std;
 
 // Time: O(n)
 // Space: O(n)
-bool isUnique(string& s) {
+bool is_unique(string& s) {
   unordered_map<char, int> frequency;
   for (char letter: s) {
     if (frequency[letter] > 0) {
