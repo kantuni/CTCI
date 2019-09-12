@@ -4,12 +4,12 @@ using namespace std;
 // Time: O(n)
 // Space: O(n)
 bool is_unique(string& s) {
-  unordered_map<char, int> frequency;
+  unordered_map<char, int> count;
   for (char letter: s) {
-    if (frequency[letter] > 0) {
+    if (count[letter] > 0) {
       return false;
     }
-    frequency[letter]++;
+    count[letter]++;
   }
   return true;
 }
