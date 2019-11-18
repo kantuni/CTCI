@@ -1,8 +1,9 @@
+// Time: O(n)
+// Space: O(n)
+
 #include <bits/stdc++.h>
 using namespace std;
 
-// Time: O(n)
-// Space: O(n)
 bool is_unique(string& s) {
   unordered_map<char, int> counter;
   for (char letter: s) {
